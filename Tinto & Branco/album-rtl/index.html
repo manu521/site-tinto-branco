@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinto & Branco</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Inclua seu CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tinto & Branco</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#vinhos">Vinhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="text-center my-5">
+        <div class="container">
+            <h2>Bem-vindo à Tinto & Branco</h2>
+            <p>A Tinto & Branco é uma vinícola dedicada à produção de vinhos de alta qualidade. Situada em uma das mais belas regiões vinícolas do país, nossa paixão pelo vinho se reflete em cada garrafa que produzimos. Com técnicas tradicionais e um compromisso com a sustentabilidade, buscamos sempre a excelência em sabor e aroma.</p>
+        </div>
+    </section>
+
+    <!-- Carrossel de Vinhos -->
+    <section id="vinhos" class="my-5">
+        <div class="container">
+            <h2 class="text-center">Nossos Vinhos</h2>
+            <div id="carrosselVinhos" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://i.zst.com.br/images/os-4-melhores-vinhos-brasileiros-em-2018-photo567027689-44-b-15.jpg" class="d-block w-100" alt="Vinho Tinto">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vinho Tinto Premium</h5>
+                            <p>Um tinto encorpado com notas de frutas vermelhas e especiarias.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://vinholando.com/wp-content/uploads/2021/06/vinho-branco-saiba-tudo-sobre-1000x619.png" class="d-block w-100" alt="Vinho Branco">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vinho Branco Refrescante</h5>
+                            <p>Um branco leve e frutado, ideal para dias quentes.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://ogimg.infoglobo.com.br/in/24031314-ab6-e1b/FT1086A/Foto-Bar-Leblon_Vinho-Rose_Credito-Nishihama_Divulgacao.jpg" class="d-block w-100" alt="Vinho Rosé">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Vinho Rosé Elegante</h5>
+                            <p>Um rosé delicado com aromas florais e de frutas vermelhas.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carrosselVinhos" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carrosselVinhos" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                interval: 5000 // Intervalo de 5 segundos entre as transições
+            });
+        });
+    </script>
+ <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p>&copy; 2024 Tinto & Branco. Todos os direitos reservados.</p>
+        <ul class="list-unstyled d-flex justify-content-center">
+            <li class="mx-3"><a href="#sobre" class="text-white">Sobre Nós</a></li>
+            <li class="mx-3"><a href="#vinhos" class="text-white">Vinhos</a></li>
+            <li class="mx-3"><a href="#contato" class="text-white">Contato</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel({
+            interval: 5000 // Intervalo de 5 segundos entre as transições
+        });
+    });
+</script>
+</body>
+</html>
